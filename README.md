@@ -1,39 +1,31 @@
-<!--
-This is a template for datasets in the Fatiando a Terra collection.
+# Moon - Topography grid at 10 arc-minute resolution
 
-When adding a new dataset, fill out the information below. Search for all
-instances of "CHANGEME" and replace with the relevant information.
+Global 10 arc-minute resolution grid of lunar topography referenced to the Lunar
+spheroid of [Wieczorek (2015)](https://doi.org/10.1016/b978-0-444-53802-4.00169-x).
 
-You probably also want to edit the conda environment.yml file to give the
-environment a new name and add/remove dependencies.
-
-You can delete this comment once done.
--->
-
-# Location - Data type
-
-CHANGEME: A few sentences about the dataset and a plot should go here.
-
-![CHANGEME: The alt text of the image.](preview.jpg)
+![Map of topography showing many circular patterns of both low and high altitude.](preview.jpg)
 
 | | Summary |
 |--:|:--|
-| File | `CHANGEME.csv` |
-| Size | CHANGEME Mb |
-| Version | [CHANGEME](https://github.com/fatiando-data/CHANGEME/releases/latest) |
-| DOI | https://doi.org/CHANGEME |
+| File | `moon-topography-10arcmin.nc` |
+| Size | 3 Mb |
+| Version | [v1](https://github.com/fatiando-data/moon-topography-10arcmin/releases/latest) |
+| DOI | https://doi.org/10.5281/zenodo.10693930 |
 | License | [CC-BY](https://creativecommons.org/licenses/by/4.0/) |
-| MD5 | `md5:CHANGEME` |
-| SHA256 | `sha256:CHANGEME` |
-| Source | CHANGEME: Citation and/or link to original data source |
-| Original license | CHANGEME: License (with link) of the original source |
-| Processing code | [`prepare.ipynb`](https://nbviewer.org/github/fatiando-data/CHANGEME/blob/main/prepare.ipynb) |
+| MD5 | `md5:0af3363529eb38bb8bbc144c5d756dd9` |
+| SHA256 | `sha256:9190261690005fac8d63ed65133e7ab6f691b481a0bd6f52bcfb907b5dfadda2` |
+| Source |  Wieczorek, M. A. (2015). Spherical harmonic model of the shape of Earth's Moon: MoonTopo2600p [Data set]. Zenodo. doi:[10.5281/zenodo.3870924](https://doi.org/10.5281/zenodo.3870924) |
+| Original license | [CC-BY](https://doi.org/10.5281/zenodo.3870924) |
+| Processing code | [`prepare.ipynb`](https://nbviewer.org/github/fatiando-data/moon-topography-10arcmin/blob/main/prepare.ipynb) |
 
 ## Changes made
 
 > These are the changes made to the original dataset.
 
-* CHANGEME: List here changes made to the original data.
+* Expand the spherical harmonic model into a grid.
+* Convert the radius data into topography by subtracting the radius of the
+  lunar reference sphere of
+  [Wieczorek (2015)](https://doi.org/10.1016/b978-0-444-53802-4.00169-x).
 
 ## About this repository
 
